@@ -1,0 +1,63 @@
+h1 {
+    color: yellow;
+    background-color: red;
+}
+
+/* class selector */
+.orange {
+    background-color: orange;
+}
+.yellow {
+    background-color: yellow;
+}
+.blue {
+    background-color: lightblue;
+}
+
+/* id selectors */
+#flame {
+    background-color: orange;
+}
+#love {
+    background-color: pink;
+}
+#water {
+    background-color: blue;
+}
+
+/* child selectors */
+
+div > p {
+    background-color: chartreuse;
+}
+
+span > p {
+    background-color: blueviolet;
+}
+
+/* descendent selector */
+div h4 {
+    background-color: aqua;
+}
+
+/* universal selector */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Pseudo Selectors */
+a:link {
+    color: red;
+}
+a:visited {
+    color: hotpink;
+}
+a:hover {
+    background-color: black;
+    color: white;
+}
+a:active {
+    background-color: red;
+    color: yellow;
+}
