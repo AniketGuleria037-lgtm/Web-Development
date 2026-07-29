@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    background-color: aqua;
+    height: 400px;
+    width: 400px;
+    padding: 40px;
+    border-style: solid;
+    border-width: 20px;
+    border-color: red;
+    margin: 30px;
+    box-sizing: border-box;
+}
