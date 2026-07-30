@@ -1,0 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+div p:first-of-type {
+    color: yellow;
+    background-color: red;
+}
+div p:not(:first-of-type) {
+    background-color: blue;
+    color: white;
+}
