@@ -1,0 +1,18 @@
+h1 {
+    font-family:"Griffy" ,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-thickness: 5px;
+    text-decoration-style: dotted;
+}
+p {
+    font-family: "Poppins",'Courier New', Courier, monospace;
+}
+div {
+    height: 100px;
+    border-style: solid;
+    border-color: red;
+    border-width: 2px;
+    text-overflow: clip;
+    overflow: hidden;
+}
