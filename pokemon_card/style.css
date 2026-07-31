@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.card {
+    position: relative;
+    height: 60vh;
+    width: 25vw;
+    border: solid black 2px;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+    background-color: yellow;
+}
+.pokemon {
+    position: relative;
+    left: 5rem;
+    height: 40%;
+    width: 46%;
+    border: solid black 2px;
+    border-radius: 20px;
+    margin: 5px;
+    background-image: url(pikachu.jpg);
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: contain;
+
+}
+.atks {
+    height: 48%;
+    width: 88%;
+    border: solid black 2px;
+    border-radius: 20px;
+    margin: 5px;
+    text-align: center;
+    background-image: url(background1.webp);
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: contain;
+    position: relative;
+    left: 14px;
+}
+.name {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+.level {
+    position: absolute;
+    top: 5px;
+    left: 21rem;
+}
