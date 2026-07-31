@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.box {
+    margin: 20px;
+    background-color: green;
+    border-style: solid;
+    border-color: blue;
+    width: 50vw;
+    height: 50vh;
+
+}
+.box2 {
+    height: 200px;
+    width: 200px;
+    margin: 20px;
+    background-color: rgb(67, 124, 122);
+    border-style: solid;
+    border-color: rgb(201, 151, 118);
+    font-size: 20px;
+}
+.box2 > p {
+    width: 40em;
+}
+.box3 {
+    margin: 20px;
+    background-color: red;
+    border-style: solid;
+    border-color: yellow;
+    height: 10rem;
+    width: 10rem;
+}
