@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #140F2D;
+    --primary-color: #140F2D;       /*in the root you can store your thee. This reduces repeatbility in changing color */
     --secondary-color:#F49D37;
     --text-color: #F22B29;
 }
