@@ -1,0 +1,31 @@
+:root {
+    --primary-color: #140F2D;
+    --secondary-color:#F49D37;
+    --text-color: #F22B29;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+}
+nav {
+    background-color: var(--primary-color);
+}
+ul {
+    display: flex;
+    padding: 10px;
+}
+ul li {
+    margin: 20px;
+    list-style: none;
+    font-size: large;
+}
+ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+ul li a:visited {
+    color: var(--text-color);
+}
+body {
+    background-color: var(--secondary-color);
+}
