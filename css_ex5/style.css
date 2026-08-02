@@ -1,0 +1,37 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+nav {
+    display: flex;
+    padding: 5px;
+    gap: 45rem;
+    background-color: black;
+    border-radius: 10px;
+}
+ul {
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+}
+nav ul li {
+    list-style: None;
+    font-size: large;
+    color: white;
+}
+ul li a {
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    background-color: white;
+    color: black;
+}
+a:visited {
+    color: white;
+}
+.logo {
+    position: relative;
+    left: 15rem;
+}
