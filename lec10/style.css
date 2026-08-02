@@ -1,0 +1,21 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+.container {
+    border: solid 2px black;
+    display: flex;
+    padding: 5px;
+    margin: 10px;
+    gap: 20px;
+    flex-wrap: wrap;
+    height: 70vh;
+    justify-content: center;
+    align-content: center;
+}
+.box {
+    height: 90px;
+    width: 90px;
+    background-color: blueviolet;
+    border: solid 2px black;
+}
