@@ -1,0 +1,18 @@
+@keyframes myanimation {
+    from {
+
+    }
+    to {
+        border-radius: 50%;
+        /* rotate: 90deg; */
+        transform: translateX(10rem)
+    }
+}
+.box {
+    background-color: red;
+    border: solid 2px black;
+    height: 400px;
+    width: 400px;
+    animation: myanimation 3s ease-in-out 1s infinite alternate-reverse;
+    margin: 50px;
+}
