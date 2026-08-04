@@ -1,18 +1,33 @@
-@keyframes myanimation {
+@keyframes animateX {
     from {
-
+        left: 0;
     }
     to {
-        border-radius: 50%;
-        /* rotate: 90deg; */
-        transform: translateX(10rem)
+        left: 75%;
     }
 }
+@keyframes animateY {
+    from {
+        bottom: 0%;
+    }
+    to {
+        bottom: 100%;
+    }
+}
+.container {
+    position: relative;
+    width: 80vw;
+    height: 80vh;
+    background-color: aqua;
+}
 .box {
+    position: absolute;
+    bottom: 0;
+    left: 0;
     background-color: red;
     border: solid 2px black;
-    height: 400px;
-    width: 400px;
-    animation: myanimation 3s ease-in-out 1s infinite alternate-reverse;
-    margin: 50px;
+    height: 100px;
+    width: 100px;
+    animation: animateX 2s linear 1s infinite, animateY 1s ease-out infinite alternate-reverse;
+    border-radius: 50%;
 }
