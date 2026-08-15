@@ -1,0 +1,33 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+.container {
+    height: 450px;
+    width: 300px;
+    background-color: black;
+    padding: 10px;
+}
+.contents {
+    height: 400px;
+    width: 300px;
+    /* background-color: red; */
+}
+.thumbnail {
+    height: 300px;
+    width: 300px;
+    background-color: blue;
+}
+img {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+}
+.title {
+    padding: 10px;
+    color: white;
+}
+.other {
+    padding: 10px;
+    color: white;
+}
