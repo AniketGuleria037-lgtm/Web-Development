@@ -1,37 +1,46 @@
-let loadings = document.querySelectorAll(".load")
-const loading_animation = (element) => {
-    let count = 0;
+const add_item = async (item) => {
+    let div = document.createElement("div");
+    div.innerText = item;
+    document.body.append(div);
+};
+
+const random_timeout = () => {
+    return new Promise((resolve) => {
+        let n = Math.random();
+        let timeout = 1000 + n * 6000;
+        setTimeout(() => {
+            resolve();
+        }, timeout);
+    });
+};
+
+
+
+
+const main = async () => {
     let id = setInterval(() => {
-        if(count === 3) {
-            element.innerText = ".";
-            count=0;
+        let last = document.body.lastElementChild;
+        if(last.innerHTML.endsWith("...")) {
+            last.innerHTML = last.innerHTML.slice(0, last.innerHTML.length-3);
         }
         else {
-           element.innerText += ".";
-            count++; 
+            last.innerHTML += "."
         }
-    }, 1000);
+        ;
+    }, 500);
+    let text = [
+    "Initializing Hacking",
+    "Reading your files",
+    "Password files detected",
+    "Sending files to server",
+    "Cleaning up"
+    ];
 
-    setTimeout(() => {
-        clearInterval(id);
-        element.innerText = "";
-    }, 5000);
+    for (const element of text) {
+        await add_item(element);
+        await random_timeout();
+    }
+    clearInterval(id);
 }
 
-let paras = document.querySelectorAll(".para")
-paras.forEach(element => {
-    element.hidden = true;
-});
-
-paras.forEach((element, index) => {
-    setTimeout(() => {
-        element.hidden = false;
-        console.log("test")
-    }, index*5000);
-});
-
-loadings.forEach((element, index) => {
-    setTimeout(() => {
-        loading_animation(element);
-    }, index*5000);
-});
+main();
